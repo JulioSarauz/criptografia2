@@ -1,0 +1,22 @@
+<h1>
+  PASO 1) Clave
+</h1>
+
+<input type="file" (change)="leerClave($event)">
+<div *ngIf="ClaveLeido">
+  <h3>Contenido del archivo:</h3>
+  <pre>{{ ClaveLeido }}</pre>
+</div>
+
+
+<h1>
+  PASO 2) Texto
+</h1>
+
+<input type="file" (change)="leerArchivo($event)">
+<div *ngIf="ArchivoLeido">
+  <h3>Contenido del archivo:</h3>
+  <pre>{{ ArchivoLeido }}</pre>
+</div>
+
+
